@@ -1,6 +1,6 @@
 streamlit
 supabase
-python-dotenv
+tenacity
 google-genai==1.56.0
 google-api-core==2.28.1
-tenacity
+protobuf>=4.25.3
