@@ -16,7 +16,7 @@ import json
 import os
 from typing import Dict, List
 
-from google import genai
+import google.genai as genai
 from google.api_core import exceptions
 from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type
 
