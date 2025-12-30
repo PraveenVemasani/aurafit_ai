@@ -83,7 +83,7 @@ else:
 # Generate Workout
 # -------------------------------------------------
 if st.button("Generate Today's Workout"):
-    st.session_state.workout = generate_workout(state)
+    st.session_state.workout = generate_workout(state, st.session_state.user_id)
 
 workout = st.session_state.workout
 
