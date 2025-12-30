@@ -24,6 +24,7 @@ from engine.state import UserState
 from engine.planner import plan_day
 from engine.rules import filter_allowed_exercises
 from engine.exercises import EXERCISES
+from db_helpers import get_recent_workouts
 
 
 # -------------------------------------------------
