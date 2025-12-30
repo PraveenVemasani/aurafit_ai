@@ -15,16 +15,15 @@ state -> planner -> rules -> AI -> workout
 import json
 import os
 from typing import Dict, List
-
 import google.genai as genai
-from google.api_core import exceptions
-from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type
+from tenacity import retry, stop_after_attempt, wait_exponential
 
 from engine.state import UserState
 from engine.planner import plan_day
 from engine.rules import filter_allowed_exercises
 from engine.exercises import EXERCISES
 from db_helpers import get_recent_workouts
+from config import get_secret
 
 
 # -------------------------------------------------
