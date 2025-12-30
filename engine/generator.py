@@ -52,10 +52,10 @@ VOLUME_TO_EXERCISES = {
 # AI Call Wrapper (exercise selection)
 # -------------------------------------------------
 @retry(
-    retry=retry_if_exception_type(exceptions.ResourceExhausted),
     wait=wait_exponential(multiplier=1, min=4, max=20),
     stop=stop_after_attempt(3)
 )
+
 def _call_gemini_ids(prompt: str) -> List[str]:
     response = client.models.generate_content(
         model="gemini-2.0-flash",
