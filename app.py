@@ -18,7 +18,7 @@ from db_helpers import (
 # -------------------------------------------------
 st.set_page_config(page_title="AuraFit AI", layout="centered")
 st.title("🏋️ AuraFit AI Trainer")
-st.caption("AI-powered workouts that adapt over time")
+st.caption("AI-powered workouts that adapt over time - by Praveen")
 
 
 # -------------------------------------------------
